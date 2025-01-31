@@ -1,0 +1,32 @@
+src
+├── app
+│   ├── favicon.ico
+│   ├── fonts
+│   │   ├── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── organisations
+│   │   └── page.tsx
+│   ├── page.tsx
+│   └── temp
+│       └── page.tsx
+├── components
+│   ├── CreateModal.tsx
+│   ├── Header.tsx
+│   ├── Loader.tsx
+│   ├── Login.tsx
+│   ├── Navbar.tsx
+│   ├── ProtectedRoute.tsx
+│   └── ui
+│       └── dot-pattern.tsx
+├── constant
+│   └── data.ts
+├── context
+│   └── AuthContext.tsx
+├── lib
+│   └── utils.ts
+└── shared
+    ├── Organisation.tsx
+    └── Temp.tsx
+

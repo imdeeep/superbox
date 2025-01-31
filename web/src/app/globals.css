@@ -1,0 +1,295 @@
+@import 'prismjs/themes/prism-tomorrow.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, violet);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* AI Response Container */
+.ai-response {
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Markdown Styles */
+.text-block strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.text-block em {
+  font-style: italic;
+  color: #bbb;
+}
+
+.text-block a {
+  color: #64b5f6;
+  text-decoration: none;
+  border-bottom: 1px dotted #64b5f6;
+}
+
+.text-block a:hover {
+  border-bottom-style: solid;
+}
+
+.text-block ul,
+.text-block ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.text-block li {
+  margin: 0.5rem 0;
+}
+
+.text-block .inline-code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+
+/* Copy Button Animation */
+.copy-button.copied {
+  background: #2ea043;
+  color: white;
+}
+
+.copy-button.copied .tooltip {
+  background: #2ea043;
+}
+
+.code-block {
+  margin: 1.5rem 0;
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.code-header {
+  background: #2d2d2d;
+  padding: 0.5rem 1rem;
+  color: #e0e0e0;
+  font-family: monospace;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.ai-response-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+  color: #ffffff;
+}
+
+.ai-response-text {
+  line-height: 1.6;
+  margin: 1rem 0;
+  color: #e0e0e0;
+}
+
+.inline-code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+/* VS Code-like theme */
+.response-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.code-block {
+  margin: 1rem 0;
+  background: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #3d3d3d;
+}
+
+.code-header {
+  padding: 0.5rem 1rem;
+  background: #252526;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.language-label {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.85rem;
+  color: #858585;
+}
+
+.copy-button {
+  background: transparent;
+  border: none;
+  color: #858585;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.copy-button:hover {
+  background: #ffffff1a;
+  color: #e0e0e0;
+}
+
+.copy-button .tooltip {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  background: #252526;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #e0e0e0;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.copy-button:hover .tooltip {
+  opacity: 1;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  background: #1e1e1e;
+}
+
+.code-block code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* syntax highlighting  */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6a9955;
+}
+
+.token.punctuation {
+  color: #d4d4d4;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #b5cea8;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #ce9178;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #d4d4d4;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #569cd6;
+}
+
+.token.function,
+.token.class-name {
+  color: #dcdcaa;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #9cdcfe;
+}
+
+.text-block {
+  color: #d4d4d4;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.text-block p {
+  margin: 0.75rem 0;
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "superbox",
+  "description": "Superbox is a browser extension that enables users to seamlessly capture and manage web content. With just one click, you can save the DOM content of any website and keep it in the extension's interface, making it easier to organize and refer back to relevant information.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Open the popup"
+  },
+  "permissions": ["activeTab", "scripting", "cookies", "storage"],
+  "host_permissions": ["https://superb0x.vercel.app/*"]
+}

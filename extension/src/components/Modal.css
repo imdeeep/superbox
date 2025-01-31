@@ -1,0 +1,118 @@
+.modal{
+    width: 320px;
+    position: absolute;
+    background-color: white;
+    z-index: 9;
+    min-height:600vh;
+}
+.close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #161515
+
+, white);
+}
+.closeBtn{
+    color:white;
+    cursor: pointer;
+}
+
+.mainModal{
+    background-color: white;
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.modalButtons{
+    display: flex;
+    gap: 12px;
+}
+.modalbutton{
+    flex: 1;
+    padding: 10px 5px;
+    background: linear-gradient(135deg, #161515, #131212);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.modalbutton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.modalSearch{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 2px;
+    padding: 0px 4px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    border-radius: 4px;
+}
+.modalSearch input{
+    width: 100%;
+    padding: 5px 0px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.org{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+.orgCard{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.orgCard p{
+    background: linear-gradient(135deg, #161515
+
+, #131212);
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.orgCard p:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.continue {
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #161515
+
+;
+    color: white;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+.continue:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}

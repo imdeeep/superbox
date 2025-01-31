@@ -1,0 +1,141 @@
+body {
+    width: 320px;
+    min-height: 520px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333333;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6px;
+    background: linear-gradient(135deg, #161515
+
+, #131212);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.iconButton {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.iconButton:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.mainButtons {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.mainButton {
+    flex: 1;
+    padding: 10px 5px;
+    background: linear-gradient(135deg, #161515
+
+, #131212);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.mainButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.recentContexts {
+    padding: 20px;
+}
+.recentContexts h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333333;
+    font-weight: 600;
+}
+.contextGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.contextItem {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+.contextItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.contextItem .title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.copyButton {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #161515
+
+;
+    cursor: pointer;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.copyButton:hover {
+    opacity: 1;
+}
+.continue {
+    cursor: pointer;
+    outline: none;
+    font-size: 12px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: #161515
+
+;
+    color: white;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+.continue:hover {
+    color: black;
+    background: white;
+    border: 1px solid black;
+}

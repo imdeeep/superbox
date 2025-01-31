@@ -1,0 +1,24 @@
+.
+├── dist
+│   ├── index.html
+│   ├── main.css
+│   ├── main.js
+│   ├── main.js.LICENSE.txt
+│   ├── manifest.json
+│   └── popup.html
+├── package.json
+├── package-lock.json
+├── public
+│   ├── index.html
+│   └── manifest.json
+├── README.md
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── chromeutils.js
+│   ├── index.css
+│   └── index.js
+├── tree.txt
+├── webpack.config.js
+└── webpack.dev.js
+
