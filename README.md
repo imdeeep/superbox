@@ -2,6 +2,7 @@
 
 ## Overview
 Superbox is a powerful browser extension-based web app that revolutionizes how you manage chatbot conversations and web content. It serves as a centralized hub for saving multiple chatbot contexts, notes, and web content, making it easier to create project timelines, maintain records, and manage overall context.
+Youtube Demo Link :- https://www.youtube.com/watch?v=f1T2cIctH3Y&t
 
 What sets Superbox apart is its AI integration, allowing users to ask context-related questions and explore topics beyond their current context. The project was born from the need to overcome chatbot limitations and premium plan restrictions, aiming to provide a seamless experience for generating well-documented final reports and maintaining project momentum.
 
